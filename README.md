@@ -25,6 +25,7 @@ Logs to flush out or clear include:
  When kannel has restarted successfully, run `speedtest.py`; posting to `kannel` will take a short while, now,
  the wait begins before you actually run the second test found inside `logfileparser/kannelparser.py`
 
- Observe from the `bearbox' output in the terminal, even when messages are "sent" to kannel, they still have to be
-  processed, and this kind of output is typically [shown](https://gist.github.com/1281287)
+ Observe from the `bearbox` output in the terminal, even when messages are "sent" to kannel, they still have to be
+  processed, and this kind of output is typically [shown](https://gist.github.com/1281287). When all this "message churning"
+  is complete, run `python logfileparser/kannelparser.py`
  
