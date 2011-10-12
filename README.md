@@ -9,6 +9,8 @@ This assumes that you have set up Kannel correctly. Using Linux, you can start t
  * /usr/sbin/bearerbox /etc/kannel/kannel.conf
  * /usr/sbin/smsbox /etc/kannel/kannel.conf
 
+[kannel.conf](https://gist.github.com/1281273) used can be found here, you can copy or save a copy of your existing confs:
+
 ### Prerequisites to running the test
 
 You will get the best results if you flush out your existing logs, restart your smsbox/bearerbox and start "CLEAN".
