@@ -18,4 +18,6 @@ consider that an invitation for patches.
     tr = TestReceiver()
     print "Waiting for SMS..."
     SmsReceiver(tr.iGotAnSMS).run()
-
+## Testing Metrics
+This is a WIP to best test and analyze the throughput of kannel for a sending a certain number of messages.
+The first test is written to work with RapidSMS' http_router
