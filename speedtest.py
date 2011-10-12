@@ -36,54 +36,54 @@ def send_text_in_chunks(number_of_users=100, chunks_of=10):
         total_times.append(t2-t1)
         
     print "##############################################################################################"
-    print "Sent a total of %d messages in chunks of %d : Max time<%f>, Min time<%f>"%(number_of_users,chunks_of,max(total_times),min(total_times))
+    print "Sent a total of %d messages in chunks of %d to kannel: Max time<%f>, Min time<%f>"%(number_of_users,chunks_of,max(total_times),min(total_times))
 
 
 if __name__ == "__main__":
     #################################################
     #    Testing parameters (run on Mac OS X... feel free to add benchmark tests for other environments)
     # sending default (100 messages in chunks of 10)
-    send_text_in_chunks()
 
     """
     Please uncomment what you see below to test
     """
-#    # Test: sending 1000 messages
-#    #   -> in chunks of 10
-#    #   -> in chunks of 50
-#    #   -> in chunks of 100
-#    #   -> in chunks of 500
-#    #   -> in bulk (1000)
-#    send_text_in_chunks(number_of_users=1000,chunks_of=10)
+    # Test: sending 1000 messages
+    #   -> in chunks of 10
+    #   -> in chunks of 50
+    #   -> in chunks of 100
+    #   -> in chunks of 500
+    #   -> in bulk (1000)
+
+    send_text_in_chunks(number_of_users=1000,chunks_of=10)
 #    send_text_in_chunks(number_of_users=1000,chunks_of=50)
 #    send_text_in_chunks(number_of_users=1000,chunks_of=100)
 #    send_text_in_chunks(number_of_users=1000,chunks_of=500)
 #    send_text_in_chunks(number_of_users=1000,chunks_of=1000)
 #
-#    # Test: sending 5000 messages
-#    #   -> in chunks of 10
-#    #   -> in chunks of 100
-#    #   -> in chunks of 500
-#    #   -> in chunks of 1000
-#    #   -> in bulk (5000)
+##    # Test: sending 5000 messages
+##    #   -> in chunks of 10
+##    #   -> in chunks of 100
+##    #   -> in chunks of 500
+##    #   -> in chunks of 1000
+##    #   -> in bulk (5000)
 #    send_text_in_chunks(number_of_users=5000,chunks_of=10)
 #    send_text_in_chunks(number_of_users=5000,chunks_of=100)
 #    send_text_in_chunks(number_of_users=5000,chunks_of=500)
 #    send_text_in_chunks(number_of_users=5000,chunks_of=1000)
 #    send_text_in_chunks(number_of_users=5000,chunks_of=5000)
 #
-#
-#    # Test: sending 10000 messages
-#    #   -> in chunks of 10
-#    #   -> in chunks of 100
-#    #   -> in chunks of 500
-#    #   -> in chunks of 1000
-#    #   -> in bulk (10,000)
+##
+##    # Test: sending 10000 messages
+##    #   -> in chunks of 10
+##    #   -> in chunks of 100
+##    #   -> in chunks of 500
+##    #   -> in chunks of 1000
+##    #   -> in bulk (10,000)
 #    send_text_in_chunks(number_of_users=5000,chunks_of=10)
 #    send_text_in_chunks(number_of_users=5000,chunks_of=100)
 #    send_text_in_chunks(number_of_users=5000,chunks_of=500)
 #    send_text_in_chunks(number_of_users=5000,chunks_of=1000)
 #    send_text_in_chunks(number_of_users=5000,chunks_of=5000)
 #
-#
-#    # Automatic test; this is more iterative and processor consuming unlike the tests above
+##
+##    # Automatic test; this is more iterative and processor consuming unlike the tests above
