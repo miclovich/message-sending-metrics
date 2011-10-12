@@ -4,7 +4,7 @@ import urllib
 
 num_base = 8675309
 
-STRESS_TEST_RANGE = [i for i in range(10,100000,1000)]
+STRESS_TEST_RANGE = range(100,1000000,1000)
 
 
 #logfile = file()
