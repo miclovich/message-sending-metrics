@@ -4,8 +4,10 @@ import urllib
 
 num_base = 8675309
 
-STRESS_TEST_RANGE = (10, 25, 100, 1000, 2000, 10000, 50000, 75000, 100000)
+STRESS_TEST_RANGE = [i for i in range(10,100000,1000)]
 
+
+#logfile = file()
 TIME = []
 
 def send_text(num=10):
